@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Пасхалка♥</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body style="background-color: white;">
+    <canvas id="bg-canvas"></canvas>
+    <canvas id="particle-canvas"></canvas>
+    <svg class="corner-heart" viewBox="0 0 32 29" xmlns="http://www.w3.org/2000/svg">
+      <path d="M16 28.5C16 28.5 0 19.5 0 9.5C0 4 4 0 8 0C11.5 0 14.5 2 16 5C17.5 2 20.5 0 24 0C28 0 32 4 32 9.5C32 19.5 16 28.5 16 28.5Z" fill="#ff3366"/>
+    </svg>
+
+    <div id="card" class="demo-card">
+        <h1>Кажется вам тут письмо</h1>
+
+        <div class="envelope">
+            <div class="letter">
+                <div class="letter-paper">
+                    <div class="letter-content">
+                        <h2>Ариана, с 17-летием! ♥</h2>
+
+                        <p>
+                            Сегодня особенный день. Не просто потому, что тебе
+                            исполняется 17 — а потому, что этот мир стал чуточку
+                            лучше ровно 17 лет назад, когда появилась ты.
+                        </p>
+
+                        <p>
+                            Я думал, что подарить тебе. Фотографии? Ты попросила
+                            их не выкладывать, и я это уважаю. Музыку? Её ты
+                            всегда найдёшь сама. И тогда я решил сделать то,
+                            что не требует ни фотографий, ни громких слов —
+                            этот маленький сайт. Здесь то, что я успел собрать
+                            для тебя, и то, что хочу, чтобы ты помнила.
+                        </p>
+
+                        <p>
+                            Ты — человек, который умеет быть настоящим. С тобой
+                            легко молчать, смеяться над глупостями и говорить
+                            о важном. Ты умеешь поддержать одним словом, и это
+                            дорогого стоит. Я знаю, что иногда ты сомневаешься
+                            в себе, что бывают дни, когда кажется, что всё идёт
+                            не так. Но поверь: даже в такие моменты ты остаёшься
+                            той, кого хочется беречь.
+                        </p>
+
+                        <p>
+                            17 — это странный возраст. Ты уже не ребёнок,
+                            но ещё не взрослый. Впереди много вопросов, выборов
+                            и дорог. И я хочу, чтобы ты знала: что бы ты ни
+                            выбрала, куда бы ни пошла — я всегда буду на твоей
+                            стороне. Не потому, что должен, а потому, что хочу.
+                        </p>
+
+                        <p>
+                            Пусть этот год будет к тебе добрым. Пусть в нём
+                            будет больше смеха, меньше тревог и хотя бы
+                            несколько моментов, которые захочется запомнить
+                            навсегда.
+                        </p>
+
+                        <p>
+                            С днём рождения, Ариана. Ты — лучшее,
+                            что случилось со мной. ♥
+                        </p>
+                    </div>
+                </div>
+
+                <canvas id="scratch-canvas"></canvas>
+            </div>
+
+            <div class="side"></div>
+            <div class="front"></div>
+            <div class="flap"></div>
+        </div>
+    </div>
+
+    <div id="scratch-controls">
+        <div id="scratch-progress" class="btn">
+            Стерто: <span id="scratch-percent">0%</span>
+        </div>
+
+        <a href="main.html" id="exit-btn" class="btn">
+            Выйти
+        </a>
+    </div>
+
+    <div id="scratch-cursor"></div>
+
+    <script src="page-effects.js"></script>
+    <script src="music.js"></script>
+    <script src="letter.js"></script>
+    <script src="mainscript.js"></script>
+  </body>
+</html>

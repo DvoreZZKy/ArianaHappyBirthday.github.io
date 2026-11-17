@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ей♥</title>
+    <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <!-- Экран 1: Кнопка "Начать" -->
+        <div id="start-screen">
+            <h1>Милая, это тебе от меня ♥</h1>
+            <p>Для улучшенного просмотра рекомендуется нажать F11</p>
+            <button id="start-btn">Начать</button>
+        </div>
+
+        <!-- Экран 2: Прогресс-бар (скрыт изначально) -->
+        <div id="loading-screen" class="hidden">
+            <div class="progress-wrapper">
+                <div class="progress-bar">
+                    <div class="progress-fill" id="progress-fill"></div>
+                </div>
+                <p id="progress-text">0%</p>
+            </div>
+        </div>
+
+        <canvas id="bg-canvas"></canvas>
+
+        <!-- Основной холст для анимации -->
+        <canvas id="c"></canvas>
+
+        <!-- Второй холст для частиц -->
+        <canvas id="particle-canvas"></canvas>
+
+        <!-- Маленькое сердечко в углу -->
+        <svg id="corner-heart" viewBox="0 0 32 29" xmlns="http://www.w3.org/2000/svg">
+            <path d="M16 28.5C16 28.5 0 19.5 0 9.5C0 4 4 0 8 0C11.5 0 14.5 2 16 5C17.5 2 20.5 0 24 0C28 0 32 4 32 9.5C32 19.5 16 28.5 16 28.5Z" fill="#ff3366"/>
+        </svg>
+
+        <div id="site-content">
+            <div class="demo-card" style="max-width: 400px; text-align: center;">
+                <h1>С днём рождения, моя любимая Ариана! Этот сайт я сделал для тебя!</h1>
+                <p>Осмотрись тут, я старался</p>
+                <a class="btn" href="main.html" style="text-decoration: none;">Приступить</a>
+            </div>
+        </div>
+        <audio id="sfx-pop" src="Assets/sfx/pop.wav" preload="auto"></audio>
+        <audio id="heartbeat" src="Assets/sfx/single-heatbeat.mp3" preload="auto"></audio>
+        <audio id="heartmove" src="Assets/sfx/move.mp3" preload="auto"></audio>
+
+        <script src="page-effects.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>
